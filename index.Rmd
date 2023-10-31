@@ -1,12 +1,18 @@
 ---
-title: "Quinn Anderson Personal Website"
+title: "Quinn Anderson's Personal Website"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
 ---
 
-### Welcome!
+## Welcome!
 
 I am an epidemiology student, public health researcher, advocate for the outdoors, foster dog mom, and lifelong learner.
 
-<img src="images/headshot.jpg" style="width:25%">
+<img src="images/headshot.jpg" style="width:25%">, <img src="images/colorado.jpg" style="width:25%">, 
+
+<img src="images/drummer.jpg" style="width:25%">, <img src="images/lab.jpg" style="width:25%"> 
 
 ## Background
 
