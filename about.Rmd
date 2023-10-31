@@ -10,7 +10,7 @@ output:
 
 ### *Lavender Lab*
 
-I am currently a student in the MS(c) in Epidemiology program at Columbia Mailman School of Public Health. My previous research experience from the Lavender Lab at American University was related to studying sexual adolescent minority (SMA) behavioral health outcomes related to familial support. In 2018, I presented our findings at two conferences in Washington DC: the 52nd Association for Behavioral and Cognitive Therapies Convention and the Maryland Public Health Association Conference. 
+I am currently a student in the MSc in Epidemiology program at Columbia Mailman School of Public Health. My previous research experience from the Lavender Lab at American University was related to studying sexual adolescent minority (SMA) behavioral health outcomes related to familial support. In 2018, I presented our findings at two conferences in Washington DC: the 52nd Association for Behavioral and Cognitive Therapies Convention and the Maryland Public Health Association Conference. 
 
 <img src="images/ABCT.jpg" style="width:25%">, <img src="images/MDPHA.jpg" style="width:25%">
 
