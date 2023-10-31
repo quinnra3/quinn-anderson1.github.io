@@ -2,9 +2,20 @@
 title: "About Me"
 ---
 
-### About Me
+# About Me
 
-I am a MS(c) in Epidemiology candidate graduating in Fall 2024.
+## Previous Research Experience
 
-(insert brief bio here)
+I am currently a student in the MS(c) in Epidemiology program at Columbia Mailman School of Public Health. My previous research experience from the Lavender Lab at American University was related to studying sexual adolescent minority (SMA) behavioral health outcomes related to familial support. In 2018, I presented our findings at two conferences in Washington DC: the 52nd Association for Behavioral and Cognitive Therapies Convention and the Maryland Public Health Association Conference. 
 
+<img src="images/ABCT.jpg" style="width:25%">
+
+<img src="images/MDPHA.jpg" style="width:25%">
+
+Our published findings of which I am a co-author can be found [here](https://onlinelibrary.wiley.com/doi/10.1111/fare.12514).
+
+## Research Interests
+
+My research interests include comorbidities in patients with chronic pain utilizing opioid prescriptions alongside psychiatric behavioral health outcomes. My prior research was on the mediation of depressive symptoms and minority stress among a cohort of LGBT adolescents. Most recently, I coordinated health outcomes research for the total hip and knee arthroplasty patient-reported outcome measures (THA/TKA PRO-PMs) at the Yale Center for Outcomes Research and Evaluation.
+
+## Resume
