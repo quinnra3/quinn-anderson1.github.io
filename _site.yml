@@ -3,7 +3,7 @@ output_dir: "."
 navbar:
   title: "Home"
   right:
-    - text: "About"
+    - text: "About Me"
       href: about.html
     - icon: fa-envelope fa-lg
       href: mailto:<quinn.rose.anderson@gmail.com>
@@ -11,4 +11,4 @@ navbar:
       href: http://github.com/quinnra3/
 output:
   html_document:
-    theme: cerulean
+    theme: lumen
