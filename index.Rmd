@@ -6,4 +6,7 @@ title: "Quinn Anderson Personal Website"
 
 This is Quinn Anderson's personal website. 
 
-My professional work experience and resume can be found on this page here. 
+<img src="images/headshot.jpg" style="width:25%">
+
+My professional work experience and resume can be found on this page [here](about.html).
+

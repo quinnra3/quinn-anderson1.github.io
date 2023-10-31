@@ -1,0 +1,10 @@
+---
+title: "About Me"
+---
+
+### About Me
+
+I am a MS(c) in Epidemiology candidate graduating in Fall 2024.
+
+(insert brief bio here)
+
