@@ -5,6 +5,8 @@ navbar:
   right:
     - text: "About Me"
       href: about.html
+    - text: "NOAA Data Dashboard"
+      href: dashboard.html
     - icon: fa-envelope fa-lg
       href: mailto:<quinn.rose.anderson@gmail.com>
     - icon: fa-github fa-lg
