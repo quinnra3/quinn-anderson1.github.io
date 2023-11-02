@@ -10,7 +10,7 @@ output:
 
 ## Loading data
 
-We're going to look into the `Instacart` dataset. 
+We're going to look into the `NOAA` dataset. 
 
 ```{r}
 library(tidyverse)
