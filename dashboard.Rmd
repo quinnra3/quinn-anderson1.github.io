@@ -68,7 +68,7 @@ instacart_aisles |>
 Column {data-width=350}
 -----------------------------------------------------------------------
 
-### Chart C: 
+### Chart C: Histogram
 
 ```{r }
 instacart_aisles |> 
