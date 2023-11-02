@@ -1,5 +1,5 @@
 ---
-title: "NOAA Data Dashboard"
+title: "Instacart Data Dashboard"
 output: 
   flexdashboard::flex_dashboard:
     orientation: columns
@@ -12,27 +12,29 @@ library(flexdashboard)
 library(tidyverse)
 library(p8105.datasets)
 library(plotly)
+
+theme_set(theme_minimal() + theme(legend.position = "bottom"))
+
+options(
+  ggplot2.continuous.colour = "viridis",
+  ggplot2.continuous.fill = "viridis")
+
+scale_colour_discrete = scale_colour_viridis_d
+scale_fill_discrete = scale_fill_viridis_d
 ```
 
 ```{r data setup, include=FALSE}
-weather_df = 
-  rnoaa::meteo_pull_monitors(
-    c("USW00094728", "USW00022534", "USS0023B17S"),
-    var = c("PRCP", "TMIN", "TMAX"), 
-    date_min = "2021-01-01",
-    date_max = "2022-12-31")
+data("instacart")
 
-weather_df = 
-  weather_df|>
-  mutate(
-    name = recode(
-      id, 
-      USW00094728 = "CentralPark_NY", 
-      USW00022534 = "Molokai_HI",
-      USS0023B17S = "Waterhole_WA"),
-    tmin = tmin / 10,
-    tmax = tmax / 10) |>
-  select(name, id, everything())
+instacart = 
+  instacart |> 
+  as_tibble()
+
+instacart_aisles = 
+  instacart |> 
+  count(aisle) |> 
+  arrange(desc(n)) |> 
+  filter(n < 10000)
 ```
 
 Column {data-width=650}
@@ -41,23 +43,40 @@ Column {data-width=650}
 ### Chart A: Scatterplot
 
 ```{r scatterplot}
-weather_df |> 
-  mutate(text_label = str_c("Name: ", name, "\nPrcp: ", prcp, "\nDate: ", date)) |> 
+instacart_aisles |> 
+  mutate(text_label = str_c("Aisle: ", aisle, "\nNumber: ", n)) |> 
   plot_ly(
-    x = ~tmin, y = ~tmax, color = ~name, text = ~text_label,
-    type = "scatter", mode = "markers", alpha = 0.5, colors = "viridis")
+    x = ~aisle, y = ~n, type = "scatter", mode = "markers",
+    color = ~aisle, alpha = 0.75, size = 0.5, colors = "viridis", text = ~text_label) |> 
+  layout(title = "Aisles ordered from in Instacart")
 ```
-
 
 Column {data-width=350}
 -----------------------------------------------------------------------
 
-### Chart B: Boxplot
+### Chart B: Barplot
 
-```{r boxplot}
-weather_df |> 
-  mutate(name = fct_reorder(name, tmax)) |> 
-  plot_ly(y = ~tmax, color = ~name, type = "box", colors = "viridis")
+```{r barplot}
+instacart_aisles |> 
+  mutate(aisle = fct_reorder(aisle, n))|> 
+  plot_ly(
+    x = ~aisle, y = ~n, type = "bar", mode = "markers",
+    color = ~aisle, colors = "viridis") |> 
+  layout(title = "Aisles ordered from in Instacart")
 ```
+
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Chart C: 
+
+```{r }
+instacart_aisles |> 
+  filter(aisle %in% c("packaged meat", "packaged poultry", "packaged seafood")) |> 
+  plot_ly(y = ~n, color = ~aisle, type = "histogram") |> 
+  layout(title = "Distribution of Number of Items ordered from Selected Aisles")
+```
+
+
 
 
