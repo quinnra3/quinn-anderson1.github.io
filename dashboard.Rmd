@@ -65,18 +65,11 @@ instacart_aisles |>
   layout(title = "Aisles ordered from in Instacart")
 ```
 
-Column {data-width=350}
------------------------------------------------------------------------
-
 ### Chart C: Histogram
 
 ```{r }
 instacart_aisles |> 
   filter(aisle %in% c("packaged meat", "packaged poultry", "packaged seafood")) |> 
   plot_ly(y = ~n, color = ~aisle, type = "histogram") |> 
-  layout(title = "Distribution of Number of Items ordered from Selected Aisles")
+  layout(title = "Items ordered from Selected Aisles")
 ```
-
-
-
-
